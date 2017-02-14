@@ -1,0 +1,12 @@
+Behind the scene sqoop does following things
+	Get the metadata by querying catlog tables
+	Generate  Java class; compile it using JDK and Hadoop libraries
+	Connect to Hadoop cluster and submit mapReduce jobs
+============================================================================
+Import => Getting data into HDFS
+Export => Getting data from HDFS
+============================================================================
+Sqoop offers two parameters for specifying custom output directories: --target-dir
+and --warehouse-dir. Use the --target-dir parameter to specify the directory on
+HDFS where Sqoop should import your data.
+
